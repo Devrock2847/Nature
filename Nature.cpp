@@ -5,7 +5,7 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::cout << "Welcome to nature!" << std::endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
