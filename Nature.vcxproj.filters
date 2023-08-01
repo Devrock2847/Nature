@@ -18,8 +18,13 @@
     <ClCompile Include="Nature.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Druid.cpp">
+    <ClCompile Include="Druid_Abilities.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Druid_Abilities.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
