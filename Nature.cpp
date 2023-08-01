@@ -1,12 +1,10 @@
-// Nature.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
 #include "Druid_Abilities.h"
 #include <iostream>
 
-int main()
-{
+int main() {
     Druid_Abilities druid_Abilities;
     std::cout << "Welcome to Nature!" << std::endl;
+    std::cout << "You attack with a spear and deal: " << druid_Abilities.spearThrow() << std::endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
