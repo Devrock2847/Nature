@@ -18,5 +18,8 @@
     <ClCompile Include="Nature.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Druid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
