@@ -1,18 +1,23 @@
 #include "Druid_Abilities.h"
 #include <iostream>
 
-int main() {
-    
+int runGame() {
     Druid_Abilities druid_Abilities;
-    std::cout << "Welcome to Nature!" << std::endl;
+    
+    while (true) {
 
-
-    //std::cout << "You attack with a spear and deal: " << druid_Abilities.spearThrow() << std::endl;
+        std::cout << "You are walking through the forest and a bear attacks" << std::endl;
+        std::cout << "The bear has 200hp" << std::endl;
+    }
     for (int i = 0; i < 10; i++) {
         std::cout << "You attack with a terrifying roar and deal: " << druid_Abilities.savageRoar() << std::endl;
     }
     for (int i = 0; i < 10; i++) {
         std::cout << "You attack with a spear and deal: " << druid_Abilities.spearThrow() << std::endl;
     }
-    
+}
+
+int main() {
+    std::cout << "Welcome to Nature!" << std::endl;
+    runGame();
 }
