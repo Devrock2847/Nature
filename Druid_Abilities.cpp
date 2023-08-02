@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <chrono>
 #include "Druid_Abilities.h"
 
 int Druid_Abilities::transform() {
@@ -8,7 +9,12 @@ int Druid_Abilities::transform() {
 };
 
 int Druid_Abilities::savageRoar() {
-	int roar_Damage = 5;
+	unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+
+	std::default_random_engine generator(seed);
+	//std::default_random_engine generator;
+	std::uniform_int_distribution<int> distribution(4, 6);
+	int roar_Damage = distribution(generator);
 	return roar_Damage;
 };
 
