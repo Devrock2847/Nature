@@ -10,12 +10,9 @@ int Druid_Abilities::transform() {
 
 int Druid_Abilities::savageRoar() {
 	unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
-
 	std::default_random_engine generator(seed);
-	//std::default_random_engine generator;
-	std::uniform_int_distribution<int> distribution(4, 6);
-	int roar_Damage = distribution(generator);
-	return roar_Damage;
+	std::uniform_int_distribution<int> roar_Damage(4, 6);
+	return roar_Damage(generator);
 };
 
 int Druid_Abilities::spearThrow() {
