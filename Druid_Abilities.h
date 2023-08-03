@@ -8,6 +8,4 @@ public :
 	int transform();
 	int savageRoar();
 	int spearThrow();
-
-
 };
