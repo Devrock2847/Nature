@@ -7,24 +7,25 @@ int runGame() {
     Enemy enemy;
     
     while (true) {
-        int a;
+        int a = 0;
         std::cout << "You are walking through the forest and a bear attacks" << std::endl;
         std::cout << "The bear has " << enemy.enemy_Health(a) << "hp" << std::endl;
         std::cout << "What will you do?" << std::endl;
         std::cout << "[1]Throw Spear  " << "[2]Savage Roar  " << "[3]Transform  " << "[4]Run Away" << std::endl;
         int player_Choice;
         std::cin >> player_Choice;
-
         switch (player_Choice) {
         case 1:
             a = druid_Abilities.spearThrow();
             std::cout << "You attack with a spear and deal: " << a << std::endl;
             std::cout << "The bears health is now " << enemy.enemy_Health(a) << std::endl;
+            break;
         case 2:
-
+            break;
         case 3:
-
+            break;
         case 4:
+            break;
         }
        
     }
