@@ -2,12 +2,13 @@
 #include <iostream>
 #include "Enemy.h"
 
-int enemy_Health() {
-	return 200;
+int Enemy::enemy_Health() {
+	int enemy_HP = 200;
+	return enemy_HP;
 }
-int enemy_AttackPWR() {
+int Enemy::enemy_AttackPWR() {
 	return 20;
 }
-int regen_Rate() {
+int Enemy::regen_Rate() {
 	return 10;
 }
