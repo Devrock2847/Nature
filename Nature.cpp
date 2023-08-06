@@ -10,7 +10,8 @@ int runGame() {
 
         std::cout << "You are walking through the forest and a bear attacks" << std::endl;
         std::cout << "The bear has " << enemy.enemy_Health() << "hp" << std::endl;
-
+        std::cout << "What will you do?" << std::endl;
+        std::cout << "[1]Throw Spear  " << "[2]Savage Roar  " << "[3]Transform  " << "[4]Run Away" << std::endl;
     }
     for (int i = 0; i < 10; i++) {
         std::cout << "You attack with a terrifying roar and deal: " << druid_Abilities.savageRoar() << std::endl;
