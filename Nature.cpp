@@ -26,8 +26,9 @@ int runGame() {
             break;
         case 4:
             break;
+        default:
+            break;
         }
-       
     }
     for (int i = 0; i < 10; i++) {
         std::cout << "You attack with a terrifying roar and deal: " << druid_Abilities.savageRoar() << std::endl;
