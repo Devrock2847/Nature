@@ -19,8 +19,13 @@ int runGame() {
         case 1:
             a = druid_Abilities.spearThrow();
             b = enemy.enemy_Health(a, b);
+            if (b <= 0) {
+                std::cout << "You have defeated the bear!" << std::endl;
+                break;
+            }
             std::cout << "You attack with a spear and deal: " << a << std::endl;
             std::cout << "The bears health is now " << b << std::endl;
+            
             break;
         case 2:
             break;
