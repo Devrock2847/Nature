@@ -2,9 +2,9 @@
 #include <iostream>
 #include "Enemy.h"
 int enemy_HP;
-int Enemy::enemy_Health(int a) {
+int Enemy::enemy_Health(int a, int enemy_HP) {
 	int enemy_Max_HP = 200;
-	int enemy_HP = enemy_HP - a;
+	enemy_HP = enemy_HP - a;
 	return enemy_HP;
 }
 int Enemy::enemy_AttackPWR() {
