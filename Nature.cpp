@@ -9,6 +9,16 @@ int runGame() {
     int a = 0;
     int b = 200;
     std::cout << "You are walking through the forest and a bear attacks" << std::endl;
+    std::cout << "    +     + " << "\n";
+    std::cout << "   + +   + +" << "\n";
+    std::cout << "  + ^ + + ^ +" << "\n";
+    std::cout << " {           }" << "\n";
+    std::cout << "{   @     @   }" << "\n";
+    std::cout << "{    |   |    }   " << "\n";
+    std::cout << "{    (oYo)    }" << "\n";
+    std::cout << " {    vvv    } " << "\n";
+    std::cout << "  ~~~ ^^^ ~~~" << "\n";
+    std::cout << "      ~~~" << std::endl;
     while (trigger_Bool) {
         std::cout << "The bear has " << b << "hp" << std::endl;
         std::cout << "[1]Throw Spear  " << "[2]Savage Roar  " << "[3]Transform  " << "[4]Run Away" << std::endl;
