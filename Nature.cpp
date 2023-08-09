@@ -7,11 +7,9 @@ int runGame() {
     Enemy enemy;
     int a = 0;
     int b = 200;
-    std::cout << "It's a me! Mario!" << std::endl;;
+    std::cout << "You are walking through the forest and a bear attacks" << std::endl;
     while (true) {
-        std::cout << "You are walking through the forest and a bear attacks" << std::endl;
         std::cout << "The bear has " << b << "hp" << std::endl;
-        std::cout << "What will you do?" << std::endl;
         std::cout << "[1]Throw Spear  " << "[2]Savage Roar  " << "[3]Transform  " << "[4]Run Away" << std::endl;
         int player_Choice;
         std::cin >> player_Choice;
@@ -19,15 +17,18 @@ int runGame() {
         case 1:
             a = druid_Abilities.spearThrow();
             b = enemy.enemy_Health(a, b);
+            std::cout << "You attack with a spear and deal: " << a << std::endl;
             if (b <= 0) {
                 std::cout << "You have defeated the bear!" << std::endl;
                 break;
             }
-            std::cout << "You attack with a spear and deal: " << a << std::endl;
             std::cout << "The bears health is now " << b << std::endl;
-            
             break;
         case 2:
+            a = druid_Abilities.savageRoar();
+            b = enemy.enemy_Health(a, b);
+            std::cout << "You attack with a terrifying roar and deal: " << a << std::endl;
+            std::cout << "The bears health is now " << b << std::endl;
             break;
         case 3:
             break;
@@ -36,12 +37,6 @@ int runGame() {
         default:
             break;
         }
-    }
-    for (int i = 0; i < 10; i++) {
-        std::cout << "You attack with a terrifying roar and deal: " << druid_Abilities.savageRoar() << std::endl;
-    }
-    for (int i = 0; i < 10; i++) {
-        std::cout << "You attack with a spear and deal: " << druid_Abilities.spearThrow() << std::endl;
     }
 }
 
