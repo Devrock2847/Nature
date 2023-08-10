@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <chrono>
+#include <random>
 #include "Druid_Abilities.h"
 
 int Druid_Abilities::transform() {

@@ -8,6 +8,7 @@ int runGame() {
     bool trigger_Bool = true;
     int attack_Var = 0;
     int enemy_HP = 200;
+    
     std::cout << "You are walking through the forest and a bear attacks" << std::endl;
     std::cout << "    +     + " << "\n";
     std::cout << "   + +   + +" << "\n";
@@ -19,6 +20,7 @@ int runGame() {
     std::cout << " {    vvv    } " << "\n";
     std::cout << "  ~~~ ^^^ ~~~" << "\n";
     std::cout << "      ~~~" << std::endl;
+
     while (trigger_Bool) {
         std::cout << "The bear has " << enemy_HP << "hp" << std::endl;
         std::cout << "[1]Throw Spear  " << "[2]Savage Roar  " << "[3]Transform  " << "[4]Run Away" << std::endl;
