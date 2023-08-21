@@ -22,9 +22,9 @@ int runGame() {
     bool trigger_Bool = true;
     int attack_Var = 0;
     int enemy_HP = 200;
+    bearAttacks();
     
     while (trigger_Bool) {
-        bearAttacks();
         std::cout << "The bear has " << enemy_HP << "hp" << std::endl;
         std::cout << "[1]Throw Spear  " << "[2]Savage Roar  " << "[3]Transform  " << "[4]Run Away" << std::endl;
         int player_Choice;
