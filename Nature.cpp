@@ -2,13 +2,7 @@
 #include "Enemy.h"
 #include <iostream>
 
-int runGame() {
-    Druid_Abilities druid_Abilities;
-    Enemy enemy;
-    bool trigger_Bool = true;
-    int attack_Var = 0;
-    int enemy_HP = 200;
-    
+void bearAttacks() {
     std::cout << "You are walking through the forest and a bear attacks" << std::endl;
     std::cout << "    +     + " << "\n";
     std::cout << "   + +   + +" << "\n";
@@ -21,7 +15,17 @@ int runGame() {
     std::cout << "  ~~~ ^^^ ~~~" << "\n";
     std::cout << "      ~~~" << std::endl;
 
+}
+
+int runGame() {
+    Druid_Abilities druid_Abilities;
+    Enemy enemy;
+    bool trigger_Bool = true;
+    int attack_Var = 0;
+    int enemy_HP = 200;
+    
     while (trigger_Bool) {
+        bearAttacks();
         std::cout << "The bear has " << enemy_HP << "hp" << std::endl;
         std::cout << "[1]Throw Spear  " << "[2]Savage Roar  " << "[3]Transform  " << "[4]Run Away" << std::endl;
         int player_Choice;
