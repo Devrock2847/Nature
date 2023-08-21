@@ -14,7 +14,6 @@ void bearAttacks() {
     std::cout << " {    vvv    } " << "\n";
     std::cout << "  ~~~ ^^^ ~~~" << "\n";
     std::cout << "      ~~~" << std::endl;
-
 }
 
 int runGame() {
