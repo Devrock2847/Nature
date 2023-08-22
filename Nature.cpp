@@ -2,6 +2,14 @@
 #include "Enemy.h"
 #include <iostream>
 
+void wolfAttacks() {
+    std::cout << "You are sneaking past a cave and hear a wolf growl" << std::endl;
+    std::cout << "Suddenly 3 wolves appear and have you surrounded" << std::endl;
+
+
+
+
+}
 void bearAttacks() {
     std::cout << "You are walking through the forest and a bear attacks" << std::endl;
     std::cout << "    +     + " << "\n";
