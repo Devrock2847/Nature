@@ -1,6 +1,13 @@
 #pragma once
 #include <iostream>
+#include <string>
+#include <vector>
 #include "Enemy.h"
+
+std::string enemy_Type(int a) {
+	std::vector<std::string> bear_Name = { "Bear", "Wolf"};
+	return bear_Name[a];
+}
 int Enemy::enemy_Health(int a, int b) {
 	return b - a;
 }
