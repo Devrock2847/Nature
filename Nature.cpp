@@ -33,6 +33,8 @@ int runGame() {
     int attack_Var = 0;
     int enemy_HP = 200;
     wolfAttacks();
+
+
     
     while (trigger_Bool) {
         std::cout << "The bear has " << enemy_HP << "hp" << std::endl;
