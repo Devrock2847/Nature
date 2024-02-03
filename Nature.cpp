@@ -38,7 +38,7 @@ int runGame() {
         bearAttacks();
     }
     else {
-        wolfAttacks();
+        wolfAttacks(); 
     }
     
 
