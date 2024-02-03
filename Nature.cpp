@@ -32,7 +32,15 @@ int runGame() {
     int attack_Var = 0;
     //int enemy_HP = 200;
     bool isTrue = true;
-    wolfAttacks();
+    int headsOrTails;
+    headsOrTails = rand() % 2 + 1;
+    if (headsOrTails == 1) {
+        bearAttacks();
+    }
+    else {
+        wolfAttacks();
+    }
+    
 
 
     while (isTrue) {
@@ -48,7 +56,7 @@ int runGame() {
             case 1:
                 attack_Var = druid_Abilities.spearThrow();
                 enemy.enemy_HP = enemy.enemy_Health(attack_Var, enemy.enemy_HP);
-                std::cout << "You attack with a spear and deal: " << attack_Var << std::endl;
+                std::cout << "You attack with a spear and deal: " << attack_Var << " damage" << std::endl;
                 if (enemy.enemy_HP <= 0) {
                     std::cout << "You have defeated the bear!" << std::endl;
                     trigger_Bool = false;
