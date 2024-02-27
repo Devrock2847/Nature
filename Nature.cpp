@@ -30,14 +30,12 @@ int runGame() {
     Druid_Abilities_Human druid_Abilities_Human;
     bool trigger_Bool = true;
     int attack_Var = 0;
-    //int enemy_HP = 200;
     bool isTrue = true;
     int headsOrTails;
-    headsOrTails = rand() % 2 + 1;
+    headsOrTails = rand() % 2;
     if (headsOrTails == 1) {
         bearAttacks();
-    }
-    else {
+    } else {
         wolfAttacks(); 
     }
     Enemy enemyBear(200, 40, 20);
@@ -65,7 +63,7 @@ int runGame() {
             case 2:
                 attack_Var = druid_Abilities_Human.savageRoar();
                 enemyBear.enemy_HP = enemyBear.enemy_Health(attack_Var, enemyBear.enemy_HP);
-                std::cout << "You attack with a terrifying roar and deal: " << attack_Var << std::endl;
+                std::cout << "You attack with a terrifying roar and deal: " << attack_Var << " damage" << std::endl;
                 if (enemyBear.enemy_HP <= 0) {
                     std::cout << "You have defeated the bear!" << std::endl;
                     trigger_Bool = false;
