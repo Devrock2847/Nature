@@ -1,4 +1,5 @@
 #include "Druid_Abilities_Human.h"
+#include "Druid_Abilities_Transform.h"
 #include "Enemy.h"
 #include <iostream>
 
@@ -28,7 +29,9 @@ void bearAttacks() {
 
 int runGame() {
     Druid_Abilities_Human druid_Abilities_Human;
+    Druid_Abilities_Transform druid_Abilities_Transform;
     bool trigger_Bool = true;
+    bool transform = false;
     int attack_Var = 0;
     bool isTrue = true;
     int headsOrTails;
@@ -61,9 +64,15 @@ int runGame() {
                 }
                 break;
             case 2:
-                attack_Var = druid_Abilities_Human.savageRoar();
+                if (transform = false) {
+                    attack_Var = druid_Abilities_Human.savageRoar();
+                    std::cout << "You attack with a terrifying roar and deal: " << attack_Var << " damage" << std::endl;
+                }
+                else if (transform = true) {
+                    attack_Var = druid_Abilities_Transform.swipe();
+                    std::cout << "You attack with a devastating swipe and deal: " << attack_Var << " damage" << std::endl;
+                }
                 enemyBear.enemy_HP = enemyBear.enemy_Health(attack_Var, enemyBear.enemy_HP);
-                std::cout << "You attack with a terrifying roar and deal: " << attack_Var << " damage" << std::endl;
                 if (enemyBear.enemy_HP <= 0) {
                     std::cout << "You have defeated the bear!" << std::endl;
                     trigger_Bool = false;
@@ -71,7 +80,12 @@ int runGame() {
                 }
                 break;
             case 3:
-                
+                if (transform = true) {
+                    transform = false;
+                }
+                else {
+                    transform = true;
+                }
                 break;
             case 4:
                 std::cout << "There is no escape, you must fight!" << std::endl;
