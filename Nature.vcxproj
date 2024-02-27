@@ -127,12 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Druid_Abilities.cpp" />
+    <ClCompile Include="Druid_Abilities_Human.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Nature.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Druid_Abilities.h" />
+    <ClInclude Include="Druid_Abilities_Human.h" />
     <ClInclude Include="Enemy.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

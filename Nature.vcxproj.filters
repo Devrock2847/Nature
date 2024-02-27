@@ -18,7 +18,7 @@
     <ClCompile Include="Nature.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Druid_Abilities.cpp">
+    <ClCompile Include="Druid_Abilities_Human.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Enemy.cpp">
@@ -26,7 +26,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Druid_Abilities.h">
+    <ClInclude Include="Druid_Abilities_Human.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Enemy.h">

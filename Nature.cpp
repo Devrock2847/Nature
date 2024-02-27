@@ -1,4 +1,4 @@
-#include "Druid_Abilities.h"
+#include "Druid_Abilities_Human.h"
 #include "Enemy.h"
 #include <iostream>
 
@@ -27,10 +27,10 @@ void bearAttacks() {
 }
 
 int runGame() {
-    Druid_Abilities druid_Abilities;
+    Druid_Abilities_Human druid_Abilities_Human;
     bool trigger_Bool = true;
     int attack_Var = 0;
-    int enemy_HP = 200;
+    //int enemy_HP = 200;
     bool isTrue = true;
     int headsOrTails;
     headsOrTails = rand() % 2 + 1;
@@ -53,7 +53,7 @@ int runGame() {
             std::cin >> player_Choice;
             switch (player_Choice) {
             case 1:
-                attack_Var = druid_Abilities.spearThrow();
+                attack_Var = druid_Abilities_Human.spearThrow();
                 enemyBear.enemy_HP = enemyBear.enemy_Health(attack_Var, enemyBear.enemy_HP);
                 std::cout << "You attack with a spear and deal: " << attack_Var << " damage" << std::endl;
                 if (enemyBear.enemy_HP <= 0) {
@@ -63,7 +63,7 @@ int runGame() {
                 }
                 break;
             case 2:
-                attack_Var = druid_Abilities.savageRoar();
+                attack_Var = druid_Abilities_Human.savageRoar();
                 enemyBear.enemy_HP = enemyBear.enemy_Health(attack_Var, enemyBear.enemy_HP);
                 std::cout << "You attack with a terrifying roar and deal: " << attack_Var << std::endl;
                 if (enemyBear.enemy_HP <= 0) {
@@ -73,8 +73,10 @@ int runGame() {
                 }
                 break;
             case 3:
+                
                 break;
             case 4:
+                std::cout << "There is no escape, you must fight!" << std::endl;
                 break;
             default:
                 break;
