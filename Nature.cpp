@@ -31,7 +31,7 @@ int runGame() {
     Druid_Abilities_Human druid_Abilities_Human;
     Druid_Abilities_Transform druid_Abilities_Transform;
     bool trigger_Bool = true;
-    bool transform = false;
+    bool transform_Bool = false;
     int attack_Var = 0;
     bool isTrue = true;
     int headsOrTails;
@@ -49,14 +49,25 @@ int runGame() {
     while (isTrue) {
         while (trigger_Bool) {
             std::cout << "The bear has " << enemyBear.enemy_HP  << "hp" << std::endl;
-            std::cout << "[1]Throw Spear  " << "[2]Savage Roar  " << "[3]Transform  " << "[4]Run Away" << std::endl;
+            if (transform_Bool == false) {
+                std::cout << "[1]Throw Spear  " << "[2]Savage Roar  " << "[3]Transform  " << "[4]Run Away" << std::endl;
+            }
+            else if (transform_Bool == true) {
+                std::cout << "[1]Viscous Bite  " << "[2]Devastating Swipe  " << "[3]Transform  " << "[4]Run Away" << std::endl;
+            }
             int player_Choice;
             std::cin >> player_Choice;
             switch (player_Choice) {
             case 1:
-                attack_Var = druid_Abilities_Human.spearThrow();
+                if (transform_Bool == false) {
+                    attack_Var = druid_Abilities_Human.spearThrow();
+                    std::cout << "You attack with a spear and deal: " << attack_Var << " damage" << std::endl;
+                }
+                else if (transform_Bool == true) {
+                    attack_Var = druid_Abilities_Transform.bite();
+                    std::cout << "You charge and viscously bite and deal: " << attack_Var << " damage" << std::endl;
+                }
                 enemyBear.enemy_HP = enemyBear.enemy_Health(attack_Var, enemyBear.enemy_HP);
-                std::cout << "You attack with a spear and deal: " << attack_Var << " damage" << std::endl;
                 if (enemyBear.enemy_HP <= 0) {
                     std::cout << "You have defeated the bear!" << std::endl;
                     trigger_Bool = false;
@@ -64,11 +75,11 @@ int runGame() {
                 }
                 break;
             case 2:
-                if (transform = false) {
+                if (transform_Bool == false) {
                     attack_Var = druid_Abilities_Human.savageRoar();
                     std::cout << "You attack with a terrifying roar and deal: " << attack_Var << " damage" << std::endl;
                 }
-                else if (transform = true) {
+                else if (transform_Bool == true) {
                     attack_Var = druid_Abilities_Transform.swipe();
                     std::cout << "You attack with a devastating swipe and deal: " << attack_Var << " damage" << std::endl;
                 }
@@ -80,11 +91,13 @@ int runGame() {
                 }
                 break;
             case 3:
-                if (transform = true) {
-                    transform = false;
+                if (transform_Bool == true) {
+                    transform_Bool = false;
+                    std::cout << "You return to your human form" << std::endl;
                 }
                 else {
-                    transform = true;
+                    transform_Bool = true;
+                    std::cout << "Your eyes turn red and your arms swell as you transform into a bear" << std::endl;
                 }
                 break;
             case 4:
