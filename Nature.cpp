@@ -46,7 +46,6 @@ int runGame() {
     while (isTrue) {
         Enemy enemy(200, 20, 40);
         
-
         while (trigger_Bool) {
             std::cout << "The bear has " << enemy.enemy_HP << "hp" << std::endl;
             std::cout << "[1]Throw Spear  " << "[2]Savage Roar  " << "[3]Transform  " << "[4]Run Away" << std::endl;
