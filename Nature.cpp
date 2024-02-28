@@ -38,7 +38,8 @@ int runGame() {
     headsOrTails = rand() % 2;
     if (headsOrTails == 1) {
         bearAttacks();
-    } else {
+    } 
+    else {
         wolfAttacks(); 
     }
     Enemy enemyBear(200, 40, 20);
@@ -66,11 +67,15 @@ int runGame() {
             case 1:
                 if (transform_Bool == false) {
                     attack_Var = druid_Abilities_Human.spearThrow();
-                    std::cout << "You attack with a spear and deal: " << attack_Var << " damage" << std::endl;
+                    std::cout << "----------------------------------------------------------" << "\n";
+                    std::cout << "You attack with a spear and deal: " << attack_Var << " damage" << "\n";
+                    std::cout << "----------------------------------------------------------" << std::endl;
                 }
                 else if (transform_Bool == true) {
                     attack_Var = druid_Abilities_Transform.bite();
-                    std::cout << "You charge and viscously bite and deal: " << attack_Var << " damage" << std::endl;
+                    std::cout << "----------------------------------------------------------" << "\n";
+                    std::cout << "You charge and viscously bite and deal: " << attack_Var << " damage" << "\n";
+                    std::cout << "----------------------------------------------------------" << std::endl;
                 }
                 enemyBear.enemy_HP = enemyBear.enemy_Health(attack_Var, enemyBear.enemy_HP);
                 if (enemyBear.enemy_HP <= 0) {
@@ -82,11 +87,15 @@ int runGame() {
             case 2:
                 if (transform_Bool == false) {
                     attack_Var = druid_Abilities_Human.savageRoar();
-                    std::cout << "You attack with a terrifying roar and deal: " << attack_Var << " damage" << std::endl;
+                    std::cout << "----------------------------------------------------------" << "\n";
+                    std::cout << "You attack with a terrifying roar and deal: " << attack_Var << " damage" << "\n";
+                    std::cout << "----------------------------------------------------------" << std::endl;
                 }
                 else if (transform_Bool == true) {
                     attack_Var = druid_Abilities_Transform.swipe();
-                    std::cout << "You attack with a devastating swipe and deal: " << attack_Var << " damage" << std::endl;
+                    std::cout << "----------------------------------------------------------" << "\n";
+                    std::cout << "You attack with a devastating swipe and deal: " << attack_Var << " damage" << "\n";
+                    std::cout << "----------------------------------------------------------" << std::endl;
                 }
                 enemyBear.enemy_HP = enemyBear.enemy_Health(attack_Var, enemyBear.enemy_HP);
                 if (enemyBear.enemy_HP <= 0) {
@@ -98,11 +107,15 @@ int runGame() {
             case 3:
                 if (transform_Bool == true) {
                     transform_Bool = false;
-                    std::cout << "You return to your human form" << std::endl;
-                }
-                else {
+                    std::cout << "----------------------------------------------------------" << "\n";
+                    std::cout << "You return to your human form" << "\n";
+                    std::cout << "----------------------------------------------------------" << std::endl;
+                } 
+                else if (transform_Bool == false) {
                     transform_Bool = true;
-                    std::cout << "Your eyes turn red and your arms swell as you transform into a bear" << std::endl;
+                    std::cout << "----------------------------------------------------------" << "\n";
+                    std::cout << "Your eyes turn red and your arms swell as you transform into a bear" << "\n";
+                    std::cout << "----------------------------------------------------------" << std::endl;
                 }
                 break;
             case 4:
