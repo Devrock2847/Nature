@@ -8,7 +8,7 @@ Enemy::Enemy(int health, int attack_power, int regen) {
 }
 
 std::string enemy_Type(int a) {
-	std::vector<std::string> bear_Name = { "Bear", "Wolf"};
+	std::vector<std::string> bear_Name = { "Bear", "Wolf" };
 	return bear_Name[a];
 }
 

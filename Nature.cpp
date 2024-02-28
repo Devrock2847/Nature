@@ -45,16 +45,21 @@ int runGame() {
     enemyBear.enemy_HP = 200;
     enemyBear.attack_Power = 40;
     enemyBear.regen_R = 20;
+    
 
     while (isTrue) {
         while (trigger_Bool) {
             std::cout << "The bear has " << enemyBear.enemy_HP  << "hp" << std::endl;
             if (transform_Bool == false) {
+                std::cout << "----------------------------------------------------------" << "\n";
                 std::cout << "[1]Throw Spear  " << "[2]Savage Roar  " << "[3]Transform  " << "[4]Run Away" << std::endl;
+                std::cout << "----------------------------------------------------------" << std::endl;
             }
             else if (transform_Bool == true) {
-                std::cout << "[1]Viscous Bite  " << "[2]Devastating Swipe  " << "[3]Transform  " << "[4]Run Away" << std::endl;
-            }
+                std::cout << "----------------------------------------------------------" << "\n";
+                std::cout << "[1]Viscous Bite  " << "[2]Devastating Swipe  " << "[3]Transform  " << "[4]Run Away" << "\n";
+                std::cout << "----------------------------------------------------------" << std::endl;
+            }  
             int player_Choice;
             std::cin >> player_Choice;
             switch (player_Choice) {
@@ -69,7 +74,7 @@ int runGame() {
                 }
                 enemyBear.enemy_HP = enemyBear.enemy_Health(attack_Var, enemyBear.enemy_HP);
                 if (enemyBear.enemy_HP <= 0) {
-                    std::cout << "You have defeated the bear!" << std::endl;
+                    std::cout << "The " << "Bear" << " is slain, you are victorious!" << std::endl;
                     trigger_Bool = false;
                     break;
                 }
