@@ -130,7 +130,9 @@ int runGame() {
 }
 
 int main() {
-    std::cout << "Welcome to Nature!" << std::endl;
+    std::cout << "**********************************************************" << "\n";
+    std::cout << "Welcome to Nature!" << "\n";
+    std::cout << "**********************************************************" << std::endl;
     runGame();
     return 0;
 }
