@@ -42,11 +42,8 @@ int runGame() {
     else {
         wolfAttacks(); 
     }
-    Enemy enemyBear(200, 40, 20);
-    enemyBear.enemy_HP = 200;
-    enemyBear.attack_Power = 40;
-    enemyBear.regen_R = 20;
-    Enemy wolf_One(75, 30, 20);
+    Enemy enemyBear(1);
+    
     
 
     while (isTrue) {
