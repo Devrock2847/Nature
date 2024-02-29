@@ -42,23 +42,20 @@ int runGame() {
     else {
         wolfAttacks(); 
     }
-    Enemy enemyBear(1);
-    
-    
-
-    while (isTrue) {
+    for (int i = 1; i <= 2; i++) {
+        Enemy enemy(i);
         while (trigger_Bool) {
-            std::cout << "The bear has " << enemyBear.enemy_HP  << "hp" << std::endl;
+            std::cout << "The " << enemy.get_Enemy_Type() << " has " << enemy.enemy_HP << "hp" << std::endl;
             if (transform_Bool == false) {
                 std::cout << "----------------------------------------------------------" << "\n";
-                std::cout << "[1]Throw Spear  " << "[2]Savage Roar  " << "[3]Transform  " << "[4]Run Away" << std::endl;
+                std::cout << "[1]Throw Spear  " << "[2]Savage Roar  " << "[3]Transform  " << "[4]Run Away" << "\n";
                 std::cout << "----------------------------------------------------------" << std::endl;
             }
             else if (transform_Bool == true) {
                 std::cout << "----------------------------------------------------------" << "\n";
                 std::cout << "[1]Viscous Bite  " << "[2]Devastating Swipe  " << "[3]Transform  " << "[4]Run Away" << "\n";
                 std::cout << "----------------------------------------------------------" << std::endl;
-            }  
+            }
             int player_Choice;
             std::cin >> player_Choice;
             switch (player_Choice) {
@@ -75,8 +72,8 @@ int runGame() {
                     std::cout << "You charge and viscously bite and deal: " << attack_Var << " damage" << "\n";
                     std::cout << "----------------------------------------------------------" << std::endl;
                 }
-                enemyBear.enemy_HP = enemyBear.enemy_Health(attack_Var, enemyBear.enemy_HP);
-                if (enemyBear.enemy_HP <= 0) {
+                enemy.enemy_HP = enemy.enemy_Health(attack_Var, enemy.enemy_HP);
+                if (enemy.enemy_HP <= 0) {
                     std::cout << "The " << "Bear" << " is slain, you are victorious!" << std::endl;
                     trigger_Bool = false;
                     break;
@@ -96,8 +93,8 @@ int runGame() {
                     std::cout << "You attack with a devastating swipe and deal: " << attack_Var << " damage" << "\n";
                     std::cout << "----------------------------------------------------------" << std::endl;
                 }
-                enemyBear.enemy_HP = enemyBear.enemy_Health(attack_Var, enemyBear.enemy_HP);
-                if (enemyBear.enemy_HP <= 0) {
+                enemy.enemy_HP = enemy.enemy_Health(attack_Var, enemy.enemy_HP);
+                if (enemy.enemy_HP <= 0) {
                     std::cout << "You have defeated the bear!" << std::endl;
                     trigger_Bool = false;
                     break;
@@ -110,7 +107,7 @@ int runGame() {
                     std::cout << "----------------------------------------------------------" << "\n";
                     std::cout << "You begin to shrink, and return to your human form" << "\n";
                     std::cout << "----------------------------------------------------------" << std::endl;
-                } 
+                }
                 else if (transform_Bool == false) {
                     transform_Bool = true;
                     std::cout << "----------------------------------------------------------" << "\n";
