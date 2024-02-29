@@ -4,7 +4,10 @@
 #include <vector>
 #include "Enemy.h"
 
-Enemy::Enemy(int health, int attack_power, int regen) {
+Enemy::Enemy {
+	int enemy_HP;
+	int enemy_attack_power;
+	int enemy_regen;
 };
 
 std::string enemy_Type(int a) {

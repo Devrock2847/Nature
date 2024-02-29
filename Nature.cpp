@@ -46,6 +46,7 @@ int runGame() {
     enemyBear.enemy_HP = 200;
     enemyBear.attack_Power = 40;
     enemyBear.regen_R = 20;
+    Enemy wolf_One(75, 30, 20);
     
 
     while (isTrue) {
@@ -83,6 +84,7 @@ int runGame() {
                     trigger_Bool = false;
                     break;
                 }
+                //enemy attacks
                 break;
             case 2:
                 if (transform_Bool == false) {
@@ -103,6 +105,7 @@ int runGame() {
                     trigger_Bool = false;
                     break;
                 }
+                //enemy attacks
                 break;
             case 3:
                 if (transform_Bool == true) {
@@ -117,6 +120,7 @@ int runGame() {
                     std::cout << "Your eyes turn red and your arms swell as you transform into a bear" << "\n";
                     std::cout << "----------------------------------------------------------" << std::endl;
                 }
+                //enemy attacks
                 break;
             case 4:
                 std::cout << "There is no escape, you must fight!" << std::endl;
