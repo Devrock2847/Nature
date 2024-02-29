@@ -108,7 +108,7 @@ int runGame() {
                 if (transform_Bool == true) {
                     transform_Bool = false;
                     std::cout << "----------------------------------------------------------" << "\n";
-                    std::cout << "You return to your human form" << "\n";
+                    std::cout << "You begin to shrink, and return to your human form" << "\n";
                     std::cout << "----------------------------------------------------------" << std::endl;
                 } 
                 else if (transform_Bool == false) {
@@ -131,7 +131,12 @@ int runGame() {
 
 int main() {
     std::cout << "**********************************************************" << "\n";
-    std::cout << "Welcome to Nature!" << "\n";
+    std::cout << "   __" << "\n";
+    std::cout << "  {OO}" << "\n";
+    std::cout << "  |__/                        ^" << "\n";
+    std::cout << "  |^|   Welcome to Nature!   / |" << "\n";
+    std::cout << "  | |_______________________/ /" << "\n";
+    std::cout << "  {_________________________ /" << "\n";
     std::cout << "**********************************************************" << std::endl;
     runGame();
     return 0;
