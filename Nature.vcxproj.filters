@@ -27,6 +27,9 @@
     <ClCompile Include="Druid_Abilities_Transform.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Enemy_Visuals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Druid_Abilities_Human.h">
@@ -36,6 +39,9 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Druid_Abilities_Transform.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy_Visuals.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

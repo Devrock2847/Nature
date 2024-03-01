@@ -39,10 +39,10 @@ int runGame() {
         trigger_Bool = true;
         Enemy enemy(i);
         if (i == 1) {
-            bearAttacks();
+        //    bearAttacks();
         }
         else {
-            wolfAttacks();
+        //    wolfAttacks();
         }
         while (trigger_Bool) {
             std::cout << "The " << enemy.get_Enemy_Type() << " has " << enemy.enemy_HP << "hp" << std::endl;

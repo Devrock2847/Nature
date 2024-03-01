@@ -130,12 +130,14 @@
     <ClCompile Include="Druid_Abilities_Human.cpp" />
     <ClCompile Include="Druid_Abilities_Transform.cpp" />
     <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Enemy_Visuals.cpp" />
     <ClCompile Include="Nature.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Druid_Abilities_Human.h" />
     <ClInclude Include="Druid_Abilities_Transform.h" />
     <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Enemy_Visuals.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
