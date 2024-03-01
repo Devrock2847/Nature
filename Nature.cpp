@@ -34,16 +34,16 @@ int runGame() {
     bool transform_Bool = false;
     int attack_Var = 0;
     bool isTrue = true;
-    int headsOrTails;
-    headsOrTails = rand() % 2;
-    if (headsOrTails == 1) {
-        bearAttacks();
-    } 
-    else {
-        wolfAttacks(); 
-    }
+
     for (int i = 1; i <= 2; i++) {
+        trigger_Bool = true;
         Enemy enemy(i);
+        if (i == 1) {
+            bearAttacks();
+        }
+        else {
+            wolfAttacks();
+        }
         while (trigger_Bool) {
             std::cout << "The " << enemy.get_Enemy_Type() << " has " << enemy.enemy_HP << "hp" << std::endl;
             if (transform_Bool == false) {
