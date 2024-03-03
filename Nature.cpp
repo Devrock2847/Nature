@@ -66,7 +66,7 @@ int runGame() {
                 }
                 enemy.enemy_HP = enemy.enemy_Health(attack_Var, enemy.enemy_HP);
                 if (enemy.enemy_HP <= 0) {
-                    std::cout << "You have defeated the bear!" << std::endl;
+                    std::cout << "You have defeated the " << enemy.get_Enemy_Type() << "!" << std::endl;
                     trigger_Bool = false;
                     break;
                 }

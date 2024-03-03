@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Barbarian_Abilities.cpp" />
     <ClCompile Include="Druid_Abilities_Human.cpp" />
     <ClCompile Include="Druid_Abilities_Transform.cpp" />
     <ClCompile Include="Enemy.cpp" />
@@ -134,6 +135,7 @@
     <ClCompile Include="Nature.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Barbarian_Abilities.h" />
     <ClInclude Include="Druid_Abilities_Human.h" />
     <ClInclude Include="Druid_Abilities_Transform.h" />
     <ClInclude Include="Enemy.h" />

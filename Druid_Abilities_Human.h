@@ -2,7 +2,7 @@
 #include <iostream>
 
 class Druid_Abilities_Human {
-public :
+public:
 	int transform();
 	int savageRoar();
 	int spearThrow();
