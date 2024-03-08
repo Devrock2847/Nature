@@ -10,8 +10,11 @@ int runGame() {
     bool transform_Bool = false;
     int attack_Var = 0;
     bool isTrue = true;
+    int player_Class_Choice;
 
-    std::cout << "" << std::endl;
+    std::cout << "Please select a character to play as." << std::endl;
+    std::cout << "[1]Barbarian " << "[2]Druid " << "[3]???" << "[4]???" << std::endl;
+    std::cin >> player_Class_Choice;
 
     for (int i = 1; i <= 2; i++) {
         trigger_Bool = true;
