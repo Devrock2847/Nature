@@ -11,6 +11,8 @@ int runGame() {
     int attack_Var = 0;
     bool isTrue = true;
 
+    std::cout << "" << std::endl;
+
     for (int i = 1; i <= 2; i++) {
         trigger_Bool = true;
         Enemy enemy(i);
