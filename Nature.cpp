@@ -13,8 +13,23 @@ int runGame() {
     int player_Class_Choice;
 
     std::cout << "Please select a character to play as." << std::endl;
-    std::cout << "[1]Barbarian " << "[2]Druid " << "[3]???" << "[4]???" << std::endl;
+    std::cout << "[1]Barbarian " << "[2]Druid " << "[3]Cleric " << "[4]Archer " << std::endl;
     std::cin >> player_Class_Choice;
+
+    switch (player_Class_Choice) {
+    case 1:
+        std::cout << "You have selected Barbarian" << std::endl;
+        break;
+    case 2:
+        std::cout << "You have selected Druid" << std::endl;
+        break;
+    case 3:
+        std::cout << "You have selected Cleric" << std::endl;
+        break;
+    case 4:
+        std::cout << "You have selected Archer" << std::endl;
+        break;
+    }
 
     for (int i = 1; i <= 2; i++) {
         trigger_Bool = true;
