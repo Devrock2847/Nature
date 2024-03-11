@@ -18,7 +18,7 @@ int runGame() {
 
     switch (player_Class_Choice) {
     case 1:
-        std::cout << "You have selected Barbarian" << std::endl;
+        std::cout << "You have selected Barbarian, a fierce warrior that excels in hand to hand combat, when enraged they become unstopable!" << std::endl;
         break;
     case 2:
         std::cout << "You have selected Druid" << std::endl;
