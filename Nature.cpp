@@ -24,7 +24,7 @@ int runGame() {
         std::cout << "You have selected Druid" << std::endl;
         break;
     case 3:
-        std::cout << "You have selected Cleric" << std::endl;
+        std::cout << "You have selected Cleric, infused the power of the songbird, there melodic voice can lift up their allies and deafen their enemies" << std::endl;
         break;
     case 4:
         std::cout << "You have selected Archer, channeling the mark of the eagle, they have exceptional vision and agility, once they see there target they never miss" << std::endl;
