@@ -21,7 +21,7 @@ int runGame() {
         std::cout << "You have selected Barbarian, a fierce warrior that excels in hand to hand combat, when enraged they become unstopable!" << std::endl;
         break;
     case 2:
-        std::cout << "You have selected Druid" << std::endl;
+        std::cout << "You have selected Druid, a powerfull shapeshifter, sharing there soul with ancient feline spirit, they can transform into the spirit that embodies them" << std::endl;
         break;
     case 3:
         std::cout << "You have selected Cleric, infused the power of the songbird, there melodic voice can lift up their allies and deafen their enemies" << std::endl;
