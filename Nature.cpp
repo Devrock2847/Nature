@@ -12,13 +12,26 @@ int runGame() {
     bool isTrue = true;
     int player_Class_Choice;
 
-    std::cout << "Please select a character to play as." << std::endl;
+    std::cout << "Please select a character class." << std::endl;
     std::cout << "[1]Barbarian " << "[2]Druid " << "[3]Cleric " << "[4]Archer " << std::endl;
     std::cin >> player_Class_Choice;
 
+    int player_Class_Continue;
     switch (player_Class_Choice) {
     case 1:
-        std::cout << "You have selected Barbarian, a fierce warrior that excels in hand to hand combat, when enraged they become unstopable!" << std::endl;
+        std::cout << "----------------------------------------------------------" << "\n";
+        std::cout << "You have selected Barbarian, a fierce warrior that excels in hand to hand combat, when enraged they become unstopable!" << "\n";
+        std::cout << "----------------------------------------------------------" << "\n";
+        std::cout << "Would you like to begin your adventure?" << "\n";
+        std::cout << "[1]Let's go " << "[2]I've changed my mind" << std::endl;
+        std::cin >> player_Class_Continue;
+        if (player_Class_Continue == 1) {
+            std::cout << "The adventure begins!" << "\n";
+            std::cout << "----------------------------------------------------------" << std::endl;
+        }
+        else {
+            runGame();
+        }
         break;
     case 2:
         std::cout << "You have selected Druid, a powerfull shapeshifter, sharing there soul with ancient feline spirit, they can transform into the spirit that embodies them" << std::endl;
