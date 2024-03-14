@@ -20,7 +20,9 @@ int runGame() {
     switch (player_Class_Choice) {
     case 1:
         std::cout << "----------------------------------------------------------" << "\n";
-        std::cout << "You have selected Barbarian, a fierce warrior that excels in hand to hand combat, when enraged they become unstopable!" << "\n";
+        std::cout << "You have selected the Barbarian" << "\n";
+        std::cout << "A fierce warrior that excels in hand to hand combat" << "\n";
+        std::cout << "Once enraged, nothing can stand in their way!" << "\n";
         std::cout << "----------------------------------------------------------" << "\n";
         std::cout << "Attack Power: " << "\n";
         std::cout << "Health Points: " << "\n";
@@ -39,7 +41,9 @@ int runGame() {
         break;
     case 2:
         std::cout << "----------------------------------------------------------" << "\n";
-        std::cout << "You have selected Druid, a powerfull shapeshifter, sharing there soul with ancient feline spirit, they can transform into the spirit that embodies them" << "\n";
+        std::cout << "You have selected Druid" << "\n";
+        std::cout << "A powerfull shapeshifter, sharing their soul with ancient spirit" << "\n";
+        std::cout << "They can transform into the spirit that embodies them!" << "\n";
         std::cout << "----------------------------------------------------------" << "\n";
         std::cout << "Attack Power: " << "\n";
         std::cout << "Health Points: " << "\n";
@@ -58,7 +62,8 @@ int runGame() {
         break;
     case 3:
         std::cout << "----------------------------------------------------------" << "\n";
-        std::cout << "You have selected Cleric, infused the power of the songbird, there melodic voice can lift up their allies and deafen their enemies" << "\n";
+        std::cout << "You have selected Cleric, Infused the power of the songbird" << "\n";
+        std::cout << "Their melodic voice can lift up their allies and deafen their enemies!" << "\n";
         std::cout << "----------------------------------------------------------" << "\n";
         std::cout << "Attack Power: " << "\n";
         std::cout << "Health Points: " << "\n";
@@ -77,7 +82,9 @@ int runGame() {
         break;
     case 4:
         std::cout << "----------------------------------------------------------" << "\n";
-        std::cout << "You have selected Archer, channeling the mark of the eagle, they have exceptional vision and agility, once they see there target they never miss" << "\n";
+        std::cout << "You have selected Archer" << "\n";
+        std::cout << "Channeling the mark of the eagle, they have exceptional vision and agility" << "\n";
+        std::cout << "Once they lock eyes on their target, they never miss!" << "\n";
         std::cout << "----------------------------------------------------------" << "\n";
         std::cout << "Attack Power: " << "\n";
         std::cout << "Health Points: " << "\n";
