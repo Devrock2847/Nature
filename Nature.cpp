@@ -34,13 +34,49 @@ int runGame() {
         }
         break;
     case 2:
-        std::cout << "You have selected Druid, a powerfull shapeshifter, sharing there soul with ancient feline spirit, they can transform into the spirit that embodies them" << std::endl;
+        std::cout << "----------------------------------------------------------" << "\n";
+        std::cout << "You have selected Druid, a powerfull shapeshifter, sharing there soul with ancient feline spirit, they can transform into the spirit that embodies them" << "\n";
+        std::cout << "----------------------------------------------------------" << "\n";
+        std::cout << "Would you like to begin your adventure?" << "\n";
+        std::cout << "[1]Let's go " << "[2]I've changed my mind" << std::endl;
+        std::cin >> player_Class_Continue;
+        if (player_Class_Continue == 1) {
+            std::cout << "The adventure begins!" << "\n";
+            std::cout << "----------------------------------------------------------" << std::endl;
+        }
+        else {
+            runGame();
+        }
         break;
     case 3:
-        std::cout << "You have selected Cleric, infused the power of the songbird, there melodic voice can lift up their allies and deafen their enemies" << std::endl;
+        std::cout << "----------------------------------------------------------" << "\n";
+        std::cout << "You have selected Cleric, infused the power of the songbird, there melodic voice can lift up their allies and deafen their enemies" << "\n";
+        std::cout << "----------------------------------------------------------" << "\n";
+        std::cout << "Would you like to begin your adventure?" << "\n";
+        std::cout << "[1]Let's go " << "[2]I've changed my mind" << std::endl;
+        std::cin >> player_Class_Continue;
+        if (player_Class_Continue == 1) {
+            std::cout << "The adventure begins!" << "\n";
+            std::cout << "----------------------------------------------------------" << std::endl;
+        }
+        else {
+            runGame();
+        }
         break;
     case 4:
-        std::cout << "You have selected Archer, channeling the mark of the eagle, they have exceptional vision and agility, once they see there target they never miss" << std::endl;
+        std::cout << "----------------------------------------------------------" << "\n";
+        std::cout << "You have selected Archer, channeling the mark of the eagle, they have exceptional vision and agility, once they see there target they never miss" << "\n";
+        std::cout << "----------------------------------------------------------" << "\n";
+        std::cout << "Would you like to begin your adventure?" << "\n";
+        std::cout << "[1]Let's go " << "[2]I've changed my mind" << std::endl;
+        std::cin >> player_Class_Continue;
+        if (player_Class_Continue == 1) {
+            std::cout << "The adventure begins!" << "\n";
+            std::cout << "----------------------------------------------------------" << std::endl;
+        }
+        else {
+            runGame();
+        }
         break;
     }
 
