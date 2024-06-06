@@ -29,7 +29,7 @@ int runGame() {
         std::cout << "Health Points: " << "\n";
         std::cout << "Regeneration: " << "\n";
         std::cout << "----------------------------------------------------------" << "\n";
-        std::cout << "Would you like to begin your adventure?" << "\n";
+        std::cout << "Would you like to begin your adventure with this class?" << "\n";
         std::cout << "[1]Let's go " << "[2]I've changed my mind" << std::endl;
         std::cin >> player_Class_Continue;
         if (player_Class_Continue == 1) {
@@ -50,7 +50,7 @@ int runGame() {
         std::cout << "Health Points: " << "\n";
         std::cout << "Regeneration: " << "\n";
         std::cout << "----------------------------------------------------------" << "\n";
-        std::cout << "Would you like to begin your adventure?" << "\n";
+        std::cout << "Would you like to begin your adventure with this class?" << "\n";
         std::cout << "[1]Let's go " << "[2]I've changed my mind" << std::endl;
         std::cin >> player_Class_Continue;
         if (player_Class_Continue == 1) {
@@ -70,7 +70,7 @@ int runGame() {
         std::cout << "Health Points: " << "\n";
         std::cout << "Regeneration: " << "\n";
         std::cout << "----------------------------------------------------------" << "\n";
-        std::cout << "Would you like to begin your adventure?" << "\n";
+        std::cout << "Would you like to begin your adventure with this class?" << "\n";
         std::cout << "[1]Let's go " << "[2]I've changed my mind" << std::endl;
         std::cin >> player_Class_Continue;
         if (player_Class_Continue == 1) {
@@ -91,7 +91,7 @@ int runGame() {
         std::cout << "Health Points: " << "\n";
         std::cout << "Regeneration: " << "\n";
         std::cout << "----------------------------------------------------------" << "\n";
-        std::cout << "Would you like to begin your adventure?" << "\n";
+        std::cout << "Would you like to begin your adventure with this class?" << "\n";
         std::cout << "[1]Let's go " << "[2]I've changed my mind" << std::endl;
         std::cin >> player_Class_Continue;
         if (player_Class_Continue == 1) {
@@ -127,7 +127,7 @@ int runGame() {
                 if (transform_Bool == false) {
                     attack_Var = druid_Abilities_Human.spearThrow();
                     std::cout << "----------------------------------------------------------" << "\n";
-                    std::cout << "You attack with a spear and deal: " << attack_Var << " damage" << "\n";
+                    std::cout << "You launch a spear at the target, piercing its hide and dealing: " << attack_Var << " damage" << "\n";
                     std::cout << "----------------------------------------------------------" << std::endl;
                 }
                 else if (transform_Bool == true) {
@@ -138,7 +138,7 @@ int runGame() {
                 }
                 enemy.enemy_HP = enemy.enemy_Health(attack_Var, enemy.enemy_HP);
                 if (enemy.enemy_HP <= 0) {
-                    std::cout << "The " << "Bear" << " is slain, you are victorious!" << std::endl;
+                    std::cout << "The " << enemy.get_Enemy_Type() << " is slain, you are victorious!" << std::endl;
                     trigger_Bool = false;
                     break;
                 }
@@ -148,7 +148,7 @@ int runGame() {
                 if (transform_Bool == false) {
                     attack_Var = druid_Abilities_Human.savageRoar();
                     std::cout << "----------------------------------------------------------" << "\n";
-                    std::cout << "You attack with a terrifying roar and deal: " << attack_Var << " damage" << "\n";
+                    std::cout << "You  with a terrifying roar and deal: " << attack_Var << " damage" << "\n";
                     std::cout << "----------------------------------------------------------" << std::endl;
                 }
                 else if (transform_Bool == true) {
